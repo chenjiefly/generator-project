@@ -1,0 +1,44 @@
+{
+  "name": "generator-project",
+  "version": "1.0.0",
+  "description": "快速搭建前端简易项目工程的脚手架",
+  "homepage": "",
+  "author": {
+    "name": "chenjiefly",
+    "email": "chenjiefly@163.com",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman",
+    "generator",
+    "fe-project"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "json-align": "^0.1.0",
+    "lodash": "^4.16.4",
+    "yeoman-generator": "^0.23.0",
+    "yosay": "^1.0.0"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.13.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "chenjiefly/generator-project",
+  "scripts": {
+    
+  },
+  "private": true
+}
