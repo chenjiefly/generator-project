@@ -41,7 +41,11 @@ module.exports = yeoman.Base.extend({
     }
     // 模板拷贝用copyTpl，普通拷贝用copy
     this.fs.copyTpl(
-      this.templatePath(type),    // type和templates中的模板文件夹名字刚好保持一致
+      this.templatePath(type),  // 拷贝非隐藏文件
+      this.destinationPath(dest)
+    )
+    this.fs.copyTpl(
+      this.templatePath(`${ type }/.*`),  // 拷贝隐藏文件
       this.destinationPath(dest)
     )
   },
